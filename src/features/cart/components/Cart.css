@@ -1,0 +1,122 @@
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-container {
+    background-color: #0d0d0d;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    color: #ffffff;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00ffcc;
+}
+
+.cart-body {
+    padding: 20px 0;
+    max-height: 300px; /* o la altura que prefieras */
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: transparent;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+.quantity-controls button:hover {
+    background-color: #00ffcc;
+    color: #0d0d0d;
+}
+
+.quantity-controls span {
+    margin: 0 10px;
+}
+
+.remove-button {
+    background-color: transparent;
+    color: #ff00ff;
+    border: 1px solid #ff00ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.remove-button:hover {
+    background-color: #ff00ff;
+    color: #0d0d0d;
+}
+
+.cart-footer {
+    border-top: 1px solid #00ffcc;
+    padding-top: 10px;
+    text-align: right;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.clear-button {
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.clear-button:hover {
+    background-color: #ffc107;
+    color: #0d0d0d;
+}
