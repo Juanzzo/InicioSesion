@@ -17,7 +17,11 @@ const LoginForm = () => {
     try {
       const user = await authenticateUser({ email, password });
       dispatch(loginSuccess(user));
-      navigate('/');
+      if (user.role === 'admin') {
+        navigate('/admin');
+      } else {
+        navigate('/');
+      }
     } catch (err) {
       dispatch(loginFailure(err.message));
     }
@@ -29,8 +33,8 @@ const LoginForm = () => {
         <h2 style={{ color: '#00ffcc', textShadow: '0 0 10px #00ffcc, 0 0 20px #ff00ff' }}>Iniciar Sesión</h2>
         <div style={{ marginBottom: '1.5rem' }}>
           <input
-            type="email"
-            placeholder="Email"
+            type="text"
+            placeholder="Usuario o Email"
             value={email}
             onChange={e => setEmail(e.target.value)}
             required

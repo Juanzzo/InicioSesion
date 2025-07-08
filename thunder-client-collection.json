@@ -1,0 +1,142 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "CRUD Productos - Escuela JS API",
+  "dateExported": "2024-01-20T10:00:00.000Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "id": "req_001",
+      "name": "1. Get All Products",
+      "url": "https://api.escuelajs.co/api/v1/products",
+      "method": "GET",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_002", 
+      "name": "2. Get Product by ID",
+      "url": "https://api.escuelajs.co/api/v1/products/1",
+      "method": "GET",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_003",
+      "name": "3. Create New Product",
+      "url": "https://api.escuelajs.co/api/v1/products",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Producto de Prueba Thunder Client\",\n  \"price\": 299.99,\n  \"description\": \"Este es un producto creado desde Thunder Client para probar el CRUD\",\n  \"categoryId\": 1,\n  \"images\": [\n    \"https://via.placeholder.com/400x400?text=Thunder+Client+Test\",\n    \"https://via.placeholder.com/400x400?text=Producto+Prueba\"\n  ]\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_004",
+      "name": "4. Update Product",
+      "url": "https://api.escuelajs.co/api/v1/products/1",
+      "method": "PUT",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Producto Actualizado desde Thunder Client\",\n  \"price\": 399.99,\n  \"description\": \"Descripción actualizada del producto usando Thunder Client\",\n  \"categoryId\": 2,\n  \"images\": [\n    \"https://via.placeholder.com/400x400?text=Updated+Product\"\n  ]\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_005",
+      "name": "5. Delete Product",
+      "url": "https://api.escuelajs.co/api/v1/products/1",
+      "method": "DELETE",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_006",
+      "name": "6. Get Products with Pagination",
+      "url": "https://api.escuelajs.co/api/v1/products?offset=0&limit=10",
+      "method": "GET",
+      "headers": [],
+      "params": [
+        {
+          "name": "offset",
+          "value": "0",
+          "isPath": false
+        },
+        {
+          "name": "limit", 
+          "value": "10",
+          "isPath": false
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_007",
+      "name": "7. Get Products by Category",
+      "url": "https://api.escuelajs.co/api/v1/categories/1/products",
+      "method": "GET",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "id": "req_008",
+      "name": "8. Get All Categories",
+      "url": "https://api.escuelajs.co/api/v1/categories",
+      "method": "GET",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
